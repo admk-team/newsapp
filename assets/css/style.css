@@ -144,3 +144,122 @@
 .button-link a{
   text-decoration: none;
 }
+.navbar{
+  background: #FEFEFE;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.search-form{
+  width: 521px;
+}
+.search-inner-btn {
+  position: absolute;
+  left: 100px;
+  top: 43px;
+  background: 0 0;
+  font-size: 12px;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 13px;
+}
+.search-field input {
+  color: #86898e;
+  font-size: 12px;
+  height: 40px;
+  width: 100%;
+  padding-left: 50px;
+  border: 0;
+  padding-right: 15px;
+  border: 0;
+  font-weight: 400;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+}
+.navbar-light{
+  background-color: #FEFEFE;
+}
+.nav-item .nav-link{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.nav-item .nav-link img{
+  display: block;
+  padding-right: 25px;
+  height: 40px;
+}
+.nav-item .active{
+  color: #407BFF;
+}
+.h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.box{
+  margin: 15px;
+  width: 218.66px;
+  height: 181.6px;
+  background: #FFFFFF;
+  box-shadow: 0px 4.94153px 24.7076px rgba(0, 0, 0, 0.08);
+  border-radius: 9.88306px;
+}
+.news-img{
+  padding: 15px;
+  height: 100px;
+  width: 132px;
+}
+.news-icon{
+  padding: 15px;
+  height: 70px;
+}
+.news-link{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+  padding-left: 10px;
+}
+/* Mobile Responsiveness */
+@media (max-width: 767px){
+  .search-form{
+    width: 355px;
+  }
+  .search-inner-btn {
+    left: 11px;
+    top: 107px;
+  }
+  .navbar-nav .box{
+    width: 173px;
+    height: 147px;
+    margin: 5px;
+  }
+  .news-img {
+    width: 110px;
+  }
+  .news-link{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .mobile-nav{
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    list-style: none;
+    left: 0;
+    background-color: #FFFFFF;
+  }
+  .mobile-nav ul{
+    list-style: none;
+  }
+  .nav-link{
+    padding-left: 5px;
+  }
+}
