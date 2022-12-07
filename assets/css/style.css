@@ -89,3 +89,15 @@
   font-size: 16px !important;
   line-height: 20px !important;
 }
+.button-link{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+
+}
+.button-link a{
+  text-decoration: none;
+}
