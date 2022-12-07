@@ -9,48 +9,50 @@
   <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-  <div class="container my-auto d-flex align-items-center">
-    <div class="row my-auto d-flex align-items-center">
-      <div class="col-lg-6">
-        <img src="assets/images/signup.png" alt="" class="signup-img">
-        <h1 class="signup-h1">Enjoy unlimited content</h1>
-        <p class="signup-p">Find unlimited contents from different newspaper around the world</p>
-      </div>
-      <div class="col-lg-6">
-        <div class="signup-section">
-          <h2 class="signup-h2">Sign up</h2>
-          <form class="signup-form">
-            <div class="mb-3">
-              <label for="name" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your full name">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Sign up as</label>
-              <select name="" id="" class="form-control">
-                <option value="">User</option>
-                <option value="">Creator</option>
-              </select>
-            </div>
-          </form>
-          <h2 class="text-divider mt-5"><span>OR</span></h2>
-         <div class="row justify-content-center mt-5">
-          <a href="" class="btn btn-outline-primary google-btn">
-            <img src="assets/images/google.png" alt="" class="google-icon">
-            Signup with Google
-          </a>
-          <a href="" class="btn btn-primary signup-btn mt-3">
-            Sign up
-          </a>
-         </div>
+<body class="signup-page">
+  <div class="page-wrap">
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+        <div class="col-12 col-lg-6 d-none h-100 d-lg-flex flex-column justify-content-center align-items-center border-end">
+          <img src="assets/images/signup.png" alt="" class="signup-img mb-5">
+          <h1 class="signup-h1">Enjoy unlimited content</h1>
+          <p class="signup-p">Find unlimited contents from different<br>newspaper around the world</p>
+        </div>
+        <div class="col-12 col-lg-6 h-100">
+          <div class="signup-section h-100 p-4 w-80">
+            <h2 class="signup-h2 mb-5">Sign up</h2>
+            <form class="signup-form">
+              <div class="mb-4">
+                <label for="name" class="form-label mb-3">Full Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your full name">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="form-label mb-3">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-4">
+                <label for="password" class="form-label mb-3">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+              </div>
+              <div class="mb-4">
+                <label for="password" class="form-label mb-3">Sign up as</label>
+                <select name="" id="" class="form-control">
+                  <option value="">User</option>
+                  <option value="">Creator</option>
+                </select>
+              </div>
+            </form>
+            <h2 class="text-divider mt-5"><span>OR</span></h2>
+          <div class="row justify-content-center mt-5">
+            <a href="" class="btn btn-outline-primary google-btn d-flex align-items-center justify-content-center gap-4 mb-4">
+              <img src="assets/images/google.png" alt="" class="google-icon">
+              Signup with Google
+            </a>
+            <a href="" class="btn btn-primary signup-btn mt-3 d-flex align-items-center justify-content-center">
+              Sign up
+            </a>
+          </div>
+          </div>
         </div>
       </div>
     </div>
