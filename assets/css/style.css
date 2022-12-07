@@ -244,7 +244,37 @@
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
 }
-
+.article-detail img{
+  width: 1280px;
+  height: 380px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+}
+.artical-title{
+  width: 407px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.article-date span{
+  width: 129px;
+  height: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.see-more{
+  height: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #407BFF;
+  margin: auto;
+  width: 100px;
+}
 /* Mobile Responsiveness */
 @media (max-width: 767px){
   .search-form{
