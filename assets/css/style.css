@@ -110,8 +110,8 @@
 }
 .search-inner-btn {
   position: absolute;
-  left: 100px;
-  top: 43px;
+  left: 142px;
+  top: 34px;
   background: 0 0;
   font-size: 12px;
   border: 0;
@@ -183,6 +183,68 @@
   text-decoration: none;
   padding-left: 10px;
 }
+.create-icon{
+  border-radius: 50%;
+  border: 1px solid #0d6efd;
+  padding: 2px;
+}
+.button-tabs a{
+  margin-right: 10px;
+}
+.button-tabs{
+  margin: auto;
+  width: 50%;
+}
+.filter{
+  width: 228px;
+  height: 50px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 24px;
+}
+.article-img img{
+  width: 100px;
+  height: 80px;
+  border-radius: 10.0513px;
+}
+.article-title p{
+  width: 512px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.article-title span{
+  width: 129px;
+  height: 17px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.article-vews p,.article-reads p,.article-saves p,.article-plays p{
+  width: 42px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.article-vews span,.article-reads span,.article-saves span,.article-plays span{
+  width: 53px;
+  height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 767px){
   .search-form{
@@ -190,7 +252,7 @@
   }
   .search-inner-btn {
     left: 11px;
-    top: 107px;
+    top: 58px;
   }
   .navbar-nav .box{
     width: 173px;
@@ -224,5 +286,43 @@
   }
   .navbar-light .navbar-toggler img{
     height: 28px;
+  }
+  .button-tabs{
+    margin: auto;
+    width: 100%;
+  }
+  .article-title p{
+    width: 224px;
+    height: 51px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+
+  }
+  .article-img img{
+    width: 98px;
+    height: 79px;
+    left: 20px;
+    top: 235px;
+    border-radius: 10.0513px;
+  }
+  .article-title p{
+    width: 224px;
+    height: 51px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+  .article-title span{
+    width: 129px;
+    height: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.5);
   }
 }
