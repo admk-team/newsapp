@@ -275,6 +275,32 @@
   margin: auto;
   width: 100px;
 }
+.sports .col-lg-6 .text-div{
+  width: 550.87px;
+  height: 25.4px;
+} 
+.sports .col-lg-6 .overlay-text{
+  position: relative;
+  left: 22px;
+  bottom: 72px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.politics .col-lg-6 .text-div,.entertainment .col-lg-6 .text-div,.economics .col-lg-6 .text-div{
+  width: 550.87px;
+  height: 25.4px;
+}
+.politics .col-lg-6 .overlay-text,.entertainment .col-lg-6 .overlay-text,.economics .col-lg-6 .overlay-text{
+  position: relative;
+  left: 22px;
+  bottom: 72px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+} 
 /* Mobile Responsiveness */
 @media (max-width: 767px){
   .search-form{
@@ -354,5 +380,11 @@
     font-size: 12px;
     line-height: 15px;
     color: rgba(0, 0, 0, 0.5);
+  }
+  .article-detail img{
+    width: 374px;
+    height: 187px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 8px;
   }
 }
