@@ -77,6 +77,15 @@ body.dark-mode {
   margin-bottom: 90px;
 }
 
+.main {
+  padding-bottom: 86px;
+}
+@media (min-width: 768px) {
+  .main {
+      padding-bottom: .8rem;
+  }
+}
+
 .signup-form input[type="text"], 
 .signup-form input[type="email"], 
 .signup-form input[type="password"],
