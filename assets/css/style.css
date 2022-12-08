@@ -7,6 +7,10 @@ body.signup-page.dark-mode, .dark-mode.signup-page .page-wrap {
   color: #FFFFFF;
 }
 
+body:not(.signup-page) {
+  margin-top: calc(1.5rem + 105px);
+}
+
 body.dark-mode {
   background-color: #0D0D0D;
   color: #FFFFFF;
@@ -233,6 +237,9 @@ body.dark-mode {
 .navbar{
   background: #FEFEFE;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 .dark-mode .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -524,7 +531,51 @@ body.dark-mode {
   font-size: 20px;
   line-height: 24px;
   color: #FFFFFF;
-} 
+}
+
+.navbar-brand .go-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.4rem;
+  cursor: pointer;
+}
+
+.navbar-brand .go-back img {
+  width: 21px;
+  height: 13.5px;
+}
+
+.navbar-brand .page-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+}
+
+/* Buttons */
+.btn-primary2 {
+  background-color: #407BFF;
+  color: #FFFFFF;
+  padding: 14px 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  border-radius: 8px;
+}
+.dark-mode .btn-primary2 {
+  background-color: #5A8EFF;
+}
+.btn-primary2:hover {
+  color: white;
+}
+.btn-primary2 img, .btn-primary2 i {
+  width: 18px;
+  height: 18px;
+  margin-right: 11px;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 767px){
   .search-form{
@@ -532,13 +583,8 @@ body.dark-mode {
   }
   /* .search-inner-btn {
     left: 11px;
-<<<<<<< HEAD
     top: 107px;
   } */
-=======
-    top: 58px;
-  }
->>>>>>> fe209f7bb3dc1f4c2ff8692d3b3d63640b5edfe2
   .navbar-nav .box{
     width: 173px;
     height: 147px;
