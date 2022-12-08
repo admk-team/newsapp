@@ -531,7 +531,51 @@ body.dark-mode {
   font-size: 20px;
   line-height: 24px;
   color: #FFFFFF;
-} 
+}
+
+.navbar-brand .go-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.4rem;
+  cursor: pointer;
+}
+
+.navbar-brand .go-back img {
+  width: 21px;
+  height: 13.5px;
+}
+
+.navbar-brand .page-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+}
+
+/* Buttons */
+.btn-primary2 {
+  background-color: #407BFF;
+  color: #FFFFFF;
+  padding: 14px 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  border-radius: 8px;
+}
+.dark-mode .btn-primary2 {
+  background-color: #5A8EFF;
+}
+.btn-primary2:hover {
+  color: white;
+}
+.btn-primary2 img, .btn-primary2 i {
+  width: 18px;
+  height: 18px;
+  margin-right: 11px;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 767px){
   .search-form{
