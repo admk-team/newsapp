@@ -10,315 +10,281 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
-<body>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <img src="assets/images/icon_search.svg" alt="">
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="me-auto mb-2 mb-lg-0">
-            <form action="" class="search-form">
-              <div class="search-field">
-                <input type="text" placeholder="Search here...">
-              </div>
-              <button type="submit" class="search-inner-btn"> <img src="assets/images/icon_search.svg" alt=""> </button>
-            </form>
-          </div>
-          <ul class="navbar-nav d-md-flex d-none">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">
-                <img src="assets/images/icons/home_active.svg" alt="">
-                Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="subscibed.html">
-                <img src="assets/images/icons/subscribed.svg" alt="">Subscribed</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="assets/images/icons/notification.svg" alt="">
-                Notfication
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="dashboard.html">
-                <img src="assets/images/icons/profile.svg" alt="">
-                Profile</a>
-            </li>
-          </ul>
-          
+<body class="dark-mode">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container d-flex">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="assets/images/icon_search.svg" alt="">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end flex-grow-0" id="navbarSupportedContent">
+        <div class="me-auto mb-2 mb-lg-0 flex-grow-1 d-flex justify-content-center align-items-center">
+          <form action="" class="search-form">
+            <div class="search-field position-relative">
+              <input type="text" placeholder="Search for newspaper">
+              <button type="submit" class="search-inner-btn position-absolute"> <img src="assets/images/icon_search.svg" alt=""> </button>
+            </div>
+          </form>
         </div>
       </div>
-    </nav>
-    <!-- For mobile -->
-    <div class="d-md-none d-flex mobile-nav">
-      <ul class="d-md-none d-flex">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">
-            <img src="assets/images/icons/home_active.svg" alt="">
-            Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="subscibed.html">
-            <img src="assets/images/icons/subscribed.svg" alt="">Subscribed</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="assets/images/icons/notification.svg" alt="">
-            Notfication
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="dashboard.html">
-            <img src="assets/images/icons/profile.svg " alt="">
-            Profile</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse justify-content-end flex-grow-0">
+        <ul class="navbar-nav d-md-flex d-none">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">
+              <img src="assets/images/icons/home_active.svg" alt="">
+              <img src="assets/images/icons/home_active_dark.svg" class="icon-dark" alt="">
+              Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="subscibed.html">
+              <img src="assets/images/icons/subscribed.svg" alt="">
+              <img src="assets/images/icons/subscribed_dark.svg" class="icon-dark" alt="">Subscribed</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/images/icons/notification.svg" alt="">
+              <img src="assets/images/icons/notification_dark.svg" class="icon-dark" alt="">
+              Notfication
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <img src="assets/images/icons/profile.svg" alt="">
+              <img src="assets/images/icons/profile_dark.svg" class="icon-dark" alt="">
+              Profile</a>
+          </li>
+        </ul>
+        
+      </div>
     </div>
-    <div class="mt-4">
-      <h1 class="h1">Featured Newspaper</h1>
-      <div class="flex-wrap d-flex">
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/445226889 1.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="detail_page.html" class="news-link">Alintibaha</a>
-            </div>
-          </div>
-        </div>
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/newlogo 1.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="" class="news-link">Assayha</a>
-            </div>
-          </div>
-        </div>
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/TechCrunch - png 0.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="" class="news-link">Techcrunch</a>
-            </div>
-          </div>
-        </div>
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/Fox News - png 0.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="" class="news-link">Fox News</a>
-            </div>
+  </nav>
+  <!-- For mobile -->
+  <div class="d-md-none d-flex mobile-nav w-100">
+    <ul class="d-md-none d-flex px-2 py-1 m-0 w-100 justify-content-around">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">
+          <img src="assets/images/icons/home_active.svg" alt="">
+          <img src="assets/images/icons/home_active_dark.svg" class="icon-dark" alt="">
+          Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="subscibed.html">
+          <img src="assets/images/icons/subscribed.svg" alt="">
+          <img src="assets/images/icons/subscribed_dark.svg" class="icon-dark" alt="">Subscribed</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <img src="assets/images/icons/notification.svg" alt="">
+          <img src="assets/images/icons/notification_dark.svg" class="icon-dark" alt="">
+          Notfication
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <img src="assets/images/icons/profile.svg" alt="">
+          <img src="assets/images/icons/profile_dark.svg" class="icon-dark" alt="">
+          Profile</a>
+      </li>
+    </ul>
+  </div>
+  <div class="container mt-4 main">
+    <h1 class="h1">Featured Newspaper</h1>
+    <div class="flex-wrap d-flex justify-content-between">
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/445226889 1.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe.svg" alt="">
+            <img src="assets/images/icons/subscribe_dark.svg" class="dark" alt="">
           </div>
         </div>
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/TechRadar - jpeg 0.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="" class="news-link">Techradar</a>
-            </div>
+        <div>
+          <a href="" class="news-link">Alintibaha</a>
+        </div>
+      </div>
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/newlogo 1.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe_active.svg" alt="">
+            <img src="assets/images/icons/subscribe_active_dark.svg" class="dark" alt="">
           </div>
         </div>
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/CNN - png 0.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="" class="news-link">CNN</a>
-            </div>
+        <div>
+          <a href="" class="news-link">Assayha</a>
+        </div>
+      </div>
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/TechCrunch - png 0.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe_active.svg" alt="">
+            <img src="assets/images/icons/subscribe_active_dark.svg" class="dark" alt="">
           </div>
         </div>
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/BBC - png 0.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="" class="news-link">BBC News World</a>
-            </div>
+        <div>
+          <a href="" class="news-link">Techcrunch</a>
+        </div>
+      </div>
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/Fox News - png 0.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe.svg" alt="">
+            <img src="assets/images/icons/subscribe_dark.svg" class="dark" alt="">
           </div>
         </div>
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/Bloomberg - png 0.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="" class="news-link">Bloomberg</a>
-            </div>
+        <div>
+          <a href="" class="news-link">Fox News</a>
+        </div>
+      </div>
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/TechRadar - jpeg 0.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe_active.svg" alt="">
+            <img src="assets/images/icons/subscribe_active_dark.svg" class="dark" alt="">
           </div>
         </div>
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/CNN-News18 - jpeg 0.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="" class="news-link">News18</a>
-            </div>
+        <div>
+          <a href="" class="news-link">Techradar</a>
+        </div>
+      </div>
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/CNN - png 0.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe.svg" alt="">
+            <img src="assets/images/icons/subscribe_dark.svg" class="dark" alt="">
           </div>
         </div>
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/The Guardian - png 0.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="" class="news-link">Theguardian</a>
-            </div>
+        <div>
+          <a href="" class="news-link">CNN</a>
+        </div>
+      </div>
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/BBC - png 0.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe_active.svg" alt="">
+            <img src="assets/images/icons/subscribe_active_dark.svg" class="dark" alt="">
           </div>
         </div>
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/The Sun - jpeg 0.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="" class="news-link">Thesun</a>
-            </div>
+        <div>
+          <a href="" class="news-link">BBC News World</a>
+        </div>
+      </div>
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/Bloomberg - png 0.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe_active.svg" alt="">
+            <img src="assets/images/icons/subscribe_active_dark.svg" class="dark" alt="">
           </div>
         </div>
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/Xfinity - png 0.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="" class="news-link">Xfinity</a>
-            </div>
+        <div>
+          <a href="" class="news-link">Bloomberg</a>
+        </div>
+      </div>
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/CNN-News18 - jpeg 0.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe.svg" alt="">
+            <img src="assets/images/icons/subscribe_dark.svg" class="dark" alt="">
           </div>
         </div>
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/Forbes - jpeg 0.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="" class="news-link">Forbes</a>
-            </div>
+        <div>
+          <a href="" class="news-link">News18</a>
+        </div>
+      </div>
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/The Guardian - png 0.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe_active.svg" alt="">
+            <img src="assets/images/icons/subscribe_active_dark.svg" class="dark" alt="">
           </div>
         </div>
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/The Verge - jpeg 0.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="" class="news-link">Theeverge</a>
-            </div>
+        <div>
+          <a href="" class="news-link">Theguardian</a>
+        </div>
+      </div>
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/The Sun - jpeg 0.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe.svg" alt="">
+            <img src="assets/images/icons/subscribe_active.svg" class="dark" alt="">
           </div>
         </div>
-        <div class="box mt-4">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/images/news/TechCabal - png 0.png" alt="" class="news-img">
-            </div>
-            <div class="col-6">
-              <img src="assets/images/icons/bx-bookmark-plus.svg" alt="" class="news-icon">
-            </div>
+        <div>
+          <a href="" class="news-link">Thesun</a>
+        </div>
+      </div>
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/Xfinity - png 0.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe_active.svg" alt="">
+            <img src="assets/images/icons/subscribe_active_dark.svg" class="dark" alt="">
           </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <a href="" class="news-link">Techcabal</a>
-            </div>
+        </div>
+        <div>
+          <a href="" class="news-link">Xfinity</a>
+        </div>
+      </div>
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/Forbes - jpeg 0.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe_active.svg" alt="">
+            <img src="assets/images/icons/subscribe_active_dark.svg" class="dark" alt="">
           </div>
+        </div>
+        <div>
+          <a href="" class="news-link">Forbes</a>
+        </div>
+      </div>
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/The Verge - jpeg 0.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe.svg" alt="">
+            <img src="assets/images/icons/subscribe_dark.svg" class="dark" alt="">
+          </div>
+        </div>
+        <div>
+          <a href="" class="news-link">Theeverge</a>
+        </div>
+      </div>
+      <div class="box p-4 mt-4">
+        <div class="d-flex mb-4 mb-sm-5">
+          <div class="news-img flex-grow-1"><img src="assets/images/news/TechCabal - png 0.png" alt=""></div>
+          <div class="news-icon">
+            <img src="assets/images/icons/subscribe_active.svg" alt="">
+            <img src="assets/images/icons/subscribe_active_dark.svg" class="dark" alt="">
+          </div>
+        </div>
+        <div>
+          <a href="" class="news-link">Techcabal</a>
         </div>
       </div>
     </div>
