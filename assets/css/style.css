@@ -625,6 +625,38 @@ body.dark-mode {
 }
 /*===================== End: Buttons============================= */
 
+/*====================== Start: Articles =======================*/
+.articles {
+
+}
+
+.article {
+
+}
+
+.article .section {
+  margin-right: 1rem;
+}
+
+.article .details .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.article .details .date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.article .stats .stat:not(.stat:last-child) {
+  margin-right: 1rem;
+}
+
+/*====================== End: Articles =======================*/
+
 /* Mobile Responsiveness */
 @media (max-width: 767px){
   .search-form{
