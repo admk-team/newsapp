@@ -7,6 +7,10 @@ body.signup-page.dark-mode, .dark-mode.signup-page .page-wrap {
   color: #FFFFFF;
 }
 
+body:not(.signup-page) {
+  margin-top: calc(1.5rem + 105px);
+}
+
 body.dark-mode {
   background-color: #0D0D0D;
   color: #FFFFFF;
@@ -233,6 +237,9 @@ body.dark-mode {
 .navbar{
   background: #FEFEFE;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 .dark-mode .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -532,13 +539,8 @@ body.dark-mode {
   }
   /* .search-inner-btn {
     left: 11px;
-<<<<<<< HEAD
     top: 107px;
   } */
-=======
-    top: 58px;
-  }
->>>>>>> fe209f7bb3dc1f4c2ff8692d3b3d63640b5edfe2
   .navbar-nav .box{
     width: 173px;
     height: 147px;
