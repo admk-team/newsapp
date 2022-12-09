@@ -636,8 +636,8 @@ body.dark-mode {
   line-height: 24px;
   color: #FFFFFF;
 }
-.container .news-full-img{
-  width: 1440px;
+.container-fluid .news-full-img{
+  width: 100vw;
   height: 375px;
   filter: brightness(70%);
 }
@@ -658,7 +658,7 @@ body.dark-mode {
   position: relative;
   z-index: 5;
   top: 40px;
-  left: 90%;
+  left: 88%;
   width: 40px;
   height: 20px;
   font-weight: 400;
@@ -671,7 +671,7 @@ body.dark-mode {
   position: relative;
   z-index: 5;
   top: 40px;
-  left: 91%;
+  left: 89%;
   width: 40px;
   height: 20px;
   font-weight: 400;
@@ -682,14 +682,62 @@ body.dark-mode {
 }
 .news-top span{
   position: relative;
-  bottom: 50px;
-  left: 20px;
+  bottom: 70px;
+  left: 70px;
   width: 630px;
   height: 29px;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
   color: #FFFFFF;
+}
+.container .img-content img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.container .text-content p{
+  width: 129px;
+  height: 22px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+.container .text-content span{
+  width: 129px;
+  height: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.container .text-content .d-flex span{
+  width: 25px;
+  height: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 3px;
+}
+.listen-section span{
+  width: 49px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #407BFF;
+}
+.news-section-detail{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
 }
 /* Mobile Responsiveness */
 @media (max-width: 767px){
@@ -827,5 +875,25 @@ body.dark-mode {
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+  }
+  .container-fluid .news-full-img{
+    width: 414px;
+    height: 250px;
+  }
+  .news-top span{
+    bottom: 80px;
+    left: 30px;
+    width: 374px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  .news-top .bookmark-keyword{
+    left: 58%;
+  }
+  .news-top .share-keyword{
+    left: 60%;
   }
 }
