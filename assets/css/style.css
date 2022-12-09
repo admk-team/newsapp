@@ -420,9 +420,9 @@ body.dark-mode {
   border: 1px solid #0d6efd;
   padding: 2px;
 }
-.button-tabs a{
+/* .button-tabs a{
   margin-right: 10px;
-}
+} */
 .button-tabs{
   margin: auto;
   width: 50%;
@@ -554,13 +554,13 @@ body.dark-mode {
   margin: 0;
 }
 
-/* Buttons */
+/*========================== Start: Buttons=============================== */
 .btn-primary2 {
   background-color: #407BFF;
   color: #FFFFFF;
-  padding: 14px 24px;
+  padding: 0.875em 1.5em;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 8px;
   line-height: 20px;
   font-style: normal;
   border-radius: 8px;
@@ -571,11 +571,151 @@ body.dark-mode {
 .btn-primary2:hover {
   color: white;
 }
-.btn-primary2 img, .btn-primary2 i {
+.btn-primary2 img, .btn-primary2 i, .btn-outline-primary2 img, .btn-outline-primary2 i {
   width: 18px;
   height: 18px;
-  margin-right: 11px;
+  margin-right: 6px;
 }
+.btn-outline-primary2 {
+  border: 1px solid #407BFF;
+  background: rgba(255,255,255,0);
+  color: #407BFF;
+  padding: 0.875em 1.5em;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 20px;
+  font-style: normal;
+  border-radius: 8px;
+}
+
+.dark-mode .btn-outline-primary2 {
+  border: 1px solid #5A8EFF;
+  color: #5A8EFF;
+}
+
+.btn-outline-primary2:hover {
+  color: #407BFF;
+}
+
+.dark-mode .btn-outline-primary2:hover {
+  color: #5A8EFF;
+}
+
+@media (min-width: 305px) {
+  .btn-primary2, .btn-outline-primary2 {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 386px) {
+  .btn-primary2, .btn-outline-primary2 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 386px) {
+  .btn-primary2, .btn-outline-primary2 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 430px) {
+  .btn-primary2, .btn-outline-primary2 {
+    font-size: 16px;
+  }
+}
+/*===================== End: Buttons============================= */
+
+/*====================== Start: Articles =======================*/
+.articles {
+
+}
+
+.article {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.article .section:not(.section:last-child) {
+  margin-right: 1rem;
+}
+
+.article .details {
+  padding: .2rem 0;
+  margin-right: 6rem;
+}
+
+.article .details .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.article .details .date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.article .thumbnail {
+  width: 100px;
+  min-width: 100px;
+  height: 80px;
+  min-height: 80px;
+  overflow: hidden;
+  border-radius: 10.0513px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article .thumbnail img {
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+}
+
+.article .stats {
+  margin-right: 2rem !important;
+}
+
+.article .stats .stat:not(.stat:last-child) {
+  margin-right: 4vw;
+}
+
+.article .stats .stat .value {
+  display: block;
+  margin-bottom: 1rem;
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.article .stats .stat .label {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.article .actions .btn-group button {
+  background: none !important;
+}
+
+.article .actions .dropdown-menu.new {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px 0px 8px 8px;
+  border: 0;
+}
+
+/*====================== End: Articles =======================*/
+
 
 .article-detail .main-text{
   width: 613px;
