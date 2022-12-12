@@ -650,19 +650,20 @@ body.dark-mode {
   margin-right: 6rem;
 }
 
-.article .details .title {
+.article .details .title, .article .details .title a {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
   margin-bottom: 8px;
+  text-decoration: none;
 }
 
-.dark-mode .article .details .title {
+.dark-mode .article .details .title, .dark-mode .article .details .title a {
   color: #FFFFFF;
 }
 
 @media (min-width: 576px) {
-  .article .details .title {
+  .article .details .title, .article .details .title a {
     font-size: 20px;
     line-height: 24px;
   }
@@ -802,37 +803,46 @@ body.dark-mode {
   bottom: 60px;
   left: 40px;
 }
-.news-detail-navbar .navbar-nav .nav-item{
+.news-detail-navbar .navbar-nav {
   border-bottom: 3px solid rgba(42, 39, 43, 0.15);
+}
+.news-detail-navbar .navbar-nav .nav-item{
+  /* border-bottom: 3px solid rgba(42, 39, 43, 0.15); */
   margin-right:0;
 }
 .news-detail-navbar .navbar-nav .active{
   border-bottom: 3px solid #407BFF;
 }
+.news-detail-navbar .navbar-nav .nav-item {
+  margin-bottom: -3px;
+}
+.news-detail-navbar .navbar-nav .nav-item:not(:last-child) {
+  margin-right: 2.5rem;
+}
 .news-detail-navbar .navbar-nav .nav-item a{
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  margin-right:2rem;
+  /* margin-right:2rem; */
 }
 .news-detail-navbar .nav-item a{
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
-.mobile-news-navbar ul{
+/* .mobile-news-navbar ul{
   flex-direction: row;
-}
-.mobile-news-navbar .nav-item{
+} */
+/* .mobile-news-navbar .nav-item{
   border-bottom: 3px solid rgba(42, 39, 43, 0.15);
   margin-right:0!important;
-}
-.mobile-news-navbar .active{
+} */
+/* .mobile-news-navbar .active{
   border-bottom: 3px solid #407BFF;
 }
 .mobile-news-navbar .nav-item a{
   margin-right:2rem;
-}
+} */
 .sports .sport-img{
   width: 631.97px;
   height: 250px;
@@ -953,6 +963,46 @@ body.dark-mode {
   line-height: 24px;
   color: #000000;
 }
+
+/*========= Newspaper Logo ============*/
+.navbar-brand.newspaper-logo .logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+}
+
+/*============== Breaking News Slider ===============*/
+.breaking-news .slider-img {
+  width: 1280px;
+  height: 380px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breaking-news > .slider-img img {
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.breaking-news .owl-pagination {
+  margin-top: 1.5rem;
+}
+
+.breaking-news .owl-pagination .owl-page span {
+  background: #D9D9D9 !important;
+  width: 6px !important;
+  height: 6px !important;
+}
+
+.breaking-news .owl-pagination .owl-page.active span {
+  background-color: #407BFF !important;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 767px){
   .search-form{
