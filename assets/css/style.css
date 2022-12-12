@@ -657,6 +657,10 @@ body.dark-mode {
   margin-bottom: 8px;
 }
 
+.dark-mode .article .details .title {
+  color: #FFFFFF;
+}
+
 @media (min-width: 576px) {
   .article .details .title {
     font-size: 20px;
@@ -669,6 +673,10 @@ body.dark-mode {
   font-size: 14px;
   line-height: 17px;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .article .details .date {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .article .thumbnail {
@@ -712,11 +720,19 @@ body.dark-mode {
   line-height: 20px;
 }
 
+.dark-mode .article .stats .stat .value {
+  color: #FFFFFF;
+}
+
 .article .stats .stat .label {
   color: rgba(0, 0, 0, 0.5);
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+
+.dark-mode .article .stats .stat .label {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @media (min-width: 576px) {
@@ -737,11 +753,39 @@ body.dark-mode {
   background: none !important;
 }
 
+.article .actions .btn-group button img.icon-dark, .dark-mode .article .actions .btn-group button img {
+  display: none;
+}
+
+.dark-mode .article .actions .btn-group button img.icon-dark {
+  display: block;
+}
+
 .article .actions .dropdown-menu.new {
   background: #FFFFFF;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px 0px 8px 8px;
   border: 0;
+}
+
+.dark-mode .article .actions .dropdown-menu.new {
+  background: #101010;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  color: #FFFFFF;
+}
+
+.dark-mode .article .actions .dropdown-menu.new .dropdown-item {
+  color: #FFFFFF;
+}
+
+.dark-mode .article .actions .dropdown-menu.new .dropdown-item:hover,
+.dark-mode .article .actions .dropdown-menu.new .dropdown-item:focus {
+  color: #000000;
+}
+
+.dark-mode .article .actions .dropdown-menu.new .dropdown-item:active {
+  color: #FFFFFF;
 }
 
 /*====================== End: Articles =======================*/
