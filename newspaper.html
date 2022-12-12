@@ -22,7 +22,7 @@
 <!-- Include js plugin -->
 <script src="assets/js/owl.carousel.js"></script>
 </head>
-<body class="dark-mode">
+<body class="">
   <nav class="navbar navbar-expand-lg navbar-light py-4 flex-column">
     <div class="container d-flex">
       <div class="navbar-brand newspaper-logo d-flex align-items-center">
@@ -125,7 +125,7 @@
   <div class="container mt-4 main">
     <div class="news-section">
         <h1 class="title">Breaking News</h1>
-        <div class="owl-carousel owl-theme breaking-news">
+        <div class="owl-carousel owl-theme breaking-news" id="breakingNews">
             <div class="slider-img">
                 <img src="https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg?w=2000" alt="">
             </div>
@@ -388,13 +388,47 @@
         </div>
     </div>
 
+    <div class="news-section">
+        <div class="d-flex">
+            <h1 class="title flex-grow-1">Sports</h1>
+            <div><a href="#" class="see-more">See more</a></div>
+        </div>
+        <div class="articles slider owl-carousel owl-theme">
+            <div class="article-2">
+                <img src="assets/images/articles/Rectangle 5466.png" alt="">
+                <h1 class="title">Jurgen Klopp: I hope Mohamed Salah is close to exploding like
+                Liverpool</h1>
+                <div class="overlay"></div>
+            </div>
+            <div class="article-2">
+                <img src="assets/images/articles/Rectangle 5466.png" alt="">
+                <h1 class="title">Jurgen Klopp: I hope Mohamed Salah is close to exploding like
+                    Liverpool</h1>
+                <div class="overlay"></div>
+            </div>
+            <div class="article-2">
+                <img src="assets/images/articles/Rectangle 5466.png" alt="">
+                <h1 class="title">Jurgen Klopp: I hope Mohamed Salah is close to exploding like
+                    Liverpool</h1>
+                <div class="overlay"></div>
+            </div>
+            <div class="article-2">
+                <img src="assets/images/articles/Rectangle 5466.png" alt="">
+                <h1 class="title">Jurgen Klopp: I hope Mohamed Salah is close to exploding like
+                    Liverpool</h1>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
+            $("#breakingNews").owlCarousel({
                 slideSpeed: 300,
                 paginationSpeed: 400,
                 items: 1,
@@ -402,6 +436,17 @@
                 itemsDesktopSmall: false,
                 itemsTablet: false,
                 itemsMobile: false,
+                margin: 3
+            });
+
+            $(".articles.slider").owlCarousel({
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                items: 2,
+                itemsDesktop: false,
+                itemsDesktopSmall: false,
+                itemsTablet: false,
+                itemsMobile: true,
                 margin: 3
             });
         });
