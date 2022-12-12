@@ -868,6 +868,10 @@ body.dark-mode {
 }
 
 /* Article2 */
+.articles.slider .owl-controls {
+  display: none !important;
+}
+
 .articles .article-2 {
   width: 631.97px;
   height: 250px;
