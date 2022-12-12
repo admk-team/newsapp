@@ -633,7 +633,12 @@ body.dark-mode {
 
 .article {
   padding: 1.5rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+@media (min-width: 992px) {
+  .article {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
 }
 
 .article .section:not(.section:last-child) {
@@ -646,11 +651,17 @@ body.dark-mode {
 }
 
 .article .details .title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 17px;
   color: #000000;
   margin-bottom: 8px;
+}
+
+@media (min-width: 576px) {
+  .article .details .title {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .article .details .date {
@@ -680,7 +691,12 @@ body.dark-mode {
 }
 
 .article .stats {
-  margin-right: 2rem !important;
+  margin-right: 2rem;
+}
+
+.article .stats.stats-mobile {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .article .stats .stat:not(.stat:last-child) {
@@ -689,11 +705,11 @@ body.dark-mode {
 
 .article .stats .stat .value {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 8px;
   color: #000000;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .article .stats .stat .label {
@@ -701,6 +717,20 @@ body.dark-mode {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: 576px) {
+  .article .stats .stat .value {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .article .stats .stat .label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .article .actions .btn-group button {
