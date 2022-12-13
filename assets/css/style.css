@@ -1661,6 +1661,10 @@ body.dark-mode {
   }
 }
 
+.article-page .meta-info {
+  
+}
+
 
 /* Mobile Responsiveness */
 @media (max-width: 767px){
