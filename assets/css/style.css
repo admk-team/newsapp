@@ -305,7 +305,7 @@ body.dark-mode {
   color: rgba(0, 0, 0, 0.5);
 }
 .dark-mode .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 .dark-mode .nav-item .nav-link:hover {
   color: rgba(255, 255, 255, 0.5);
@@ -1171,6 +1171,7 @@ body.dark-mode {
 .dropdown-menu.new {
   border: none;
   position: relative;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .dropdown-menu.new .content {
@@ -1237,6 +1238,25 @@ body.dark-mode {
 }
 
 /*============ Notification ====================*/
+.notifications-panel {
+
+}
+
+.notifications-panel .panel-header {
+  padding: 2.5rem 1.8rem 1.5rem;
+  border-bottom: 0.828px solid rgba(0, 0, 0, 0.08);
+}
+
+.dark-mode .notifications-panel .panel-header {
+  border-bottom: 0.828px solid rgba(255, 255, 255, 0.08);
+}
+
+.notifications {
+  overflow-y: auto;
+  height: 560px;
+  overflow-y: auto;
+}
+
 .notification {
   border-bottom: 0.828px solid rgba(0, 0, 0, 0.08);
   padding: 1.5rem 1.25rem;
@@ -1353,11 +1373,19 @@ body.dark-mode {
   margin-bottom: .5rem;
 }
 
+.dark-mode .profile .profile-info .user-name {
+  color: #FFFFFF;
+}
+
 .profile .profile-info .user-email {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .profile .profile-info .user-email {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .profile .actions {
@@ -1376,9 +1404,18 @@ body.dark-mode {
   padding: 0.9rem;
 }
 
+.dark-mode .profile .actions .btn {
+  background: #5A8EFF;
+  border: 1px solid #5A8EFF;
+}
+
 .profile .actions .btn.outline {
   background-color: rgba(255, 255, 255, 0);
   color: #000000;
+}
+
+.dark-mode .profile .actions .btn.outline {
+  color: #FFFFFF;
 }
 
 .profile .actions .btn:not(:last-child) {
@@ -1406,12 +1443,64 @@ body.dark-mode {
   margin-bottom: 1rem;
 }
 
+.dark-mode .quick-settings .setting .label {
+  color: #FFFFFF;
+}
+
 .sign-out-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
   text-decoration: none;
+}
+
+.dark-mode .sign-out-link {
+  color: #FFFFFF;
+}
+
+/* Toggle Switch New */
+.toggle-switch-new {
+  background: #D9D9D9;
+  border-radius: 24px;
+  width: 239px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dark-mode .toggle-switch-new {
+  background: #333333;
+}
+
+.toggle-switch-new label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  flex-grow: 1;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dark-mode .toggle-switch-new label {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.toggle-switch-new label.active {
+  background-color: #407BFF;
+  border-radius: 24px;
+  color: #FFFFFF !important;
+}
+
+.dark-mode .toggle-switch-new label.active {
+  background-color: #5A8EFF;
+  color: #FFFFFF !important;
 }
 
 /* Mobile Responsiveness */
