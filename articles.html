@@ -9,6 +9,7 @@
   <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body class="">
   <nav class="navbar navbar-expand-lg navbar-light">
@@ -45,21 +46,68 @@
               <img src="assets/images/icons/subscribed.svg" alt="">
               <img src="assets/images/icons/subscribed_dark.svg" class="icon-dark" alt="">Subscribed</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown new">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               <img src="assets/images/icons/notification.svg" alt="">
               <img src="assets/images/icons/notification_dark.svg" class="icon-dark" alt="">
               Notfication
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+            <div class="dropdown-menu new" aria-labelledby="navbarDropdown">
+              <div class="content">
+                <div class="header">
+                  <div class="d-flex justify-content-between">
+                    <h1 class="title">Notifications</h1>
+                    <button class="mark-all-read-btn border-none outline-none">Mark all as read</button>
+                  </div>
+                </div>
+                <div class="body pb-4">
+                  <div class="notification unread d-flex">
+                    <div class="img-wrap">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/CNN_International_logo.svg/2048px-CNN_International_logo.svg.png"
+                        alt="">
+                    </div>
+                    <div class="details flex-grow-1">
+                      <p class="text">iphone 13 lasts better than the new iphone 14 series.</p>
+                      <p class="date">Sep 23, 2022 at 09:15am</p>
+                    </div>
+                  </div>
+                  <div class="notification d-flex">
+                    <div class="img-wrap">
+                      <img src="https://www.printplaygames.com/wp-content/uploads/2018/06/techradar-logo.png" alt="">
+                    </div>
+                    <div class="details flex-grow-1">
+                      <p class="text">iphone 13 lasts better than the new iphone 14 series.</p>
+                      <p class="date">Sep 23, 2022 at 09:15am</p>
+                    </div>
+                  </div>
+                  <div class="notification d-flex">
+                    <div class="img-wrap">
+                      <img
+                        src="data:image/png;base64,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"
+                        alt="">
+                    </div>
+                    <div class="details flex-grow-1">
+                      <p class="text">iphone 13 lasts better than the new iphone 14 series.</p>
+                      <p class="date">Sep 23, 2022 at 09:15am</p>
+                    </div>
+                  </div>
+                  <div class="notification d-flex">
+                    <div class="img-wrap">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/CNN_International_logo.svg/2048px-CNN_International_logo.svg.png"
+                        alt="">
+                    </div>
+                    <div class="details flex-grow-1">
+                      <p class="text">iphone 13 lasts better than the new iphone 14 series.</p>
+                      <p class="date">Sep 23, 2022 at 09:15am</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="overlay"></div>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link">
@@ -410,5 +458,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>

@@ -1163,6 +1163,11 @@ body.dark-mode {
   display: none;
 }
 
+.dropdown-menu.new[data-bs-popper] {
+  left: initial;
+  right: -20%;
+}
+
 .dropdown-menu.new {
   border: none;
   position: relative;
@@ -1179,9 +1184,19 @@ body.dark-mode {
   right: 0;
 }
 
+.dark-mode .dropdown-menu.new .content {
+  background: #0D0D0D;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
 .dropdown-menu.new .content .header {
   padding: 2.5rem 1.8rem 1.5rem;
   border-bottom: 0.828px solid rgba(0, 0, 0, 0.08);
+}
+
+.dark-mode .dropdown-menu.new .content .header {
+  border-bottom: 0.828px solid rgba(255, 255, 255, 0.08);
 }
 
 .dropdown-menu.new .content .body {
@@ -1194,12 +1209,20 @@ body.dark-mode {
   border-top: 0.828px solid rgba(0, 0, 0, 0.08);
 }
 
+.dark-mode .dropdown-menu.new .content .footer {
+  border-bottom: 0.828px solid rgba(255, 255, 255, 0.08);
+}
+
 .dropdown-menu.new .content .title {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   color: #000000;
   margin: 0;
+}
+
+.dark-mode .dropdown-menu.new .content .title {
+  color: #FFFFFF;
 }
 
 .overlay {
@@ -1219,8 +1242,16 @@ body.dark-mode {
   padding: 1.5rem 1.25rem;
 }
 
+.dark-mode .notification {
+  border-bottom: 0.828px solid rgba(255, 255, 255, 0.08);
+}
+
 .notification.unread {
   background-color: #F9FBFF;
+}
+
+.dark-mode .notification.unread {
+  background-color: #101010;
 }
 
 .notification .img-wrap {
@@ -1252,12 +1283,20 @@ body.dark-mode {
   margin-bottom: 0.5rem;
 }
 
+.dark-mode .notification .text, .dark-mode .notification .text a {
+  color: #FFFFFF;
+}
+
 .notification .date {
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .notification .date {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .mark-all-read-btn {
@@ -1271,6 +1310,108 @@ body.dark-mode {
   outline: none;
   padding: 0;
   margin: 0;
+}
+
+.dark-mode .mark-all-read-btn {
+  color: #FFFFFF;
+}
+
+/*============= Profile Menu ====================*/
+.profile {
+  padding: 2.5rem 2.5rem 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.profile .profile-info {
+  margin-bottom: 3.4rem;
+}
+
+.profile .profile-info .avatar {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin-bottom: 1.5rem;
+}
+.profile .profile-info .avatar img {
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.profile .profile-info .user-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: .5rem;
+}
+
+.profile .profile-info .user-email {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.profile .actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile .actions .btn {
+  background: #407BFF;
+  border: 1px solid #407BFF;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 0.9rem;
+}
+
+.profile .actions .btn.outline {
+  background-color: rgba(255, 255, 255, 0);
+  color: #000000;
+}
+
+.profile .actions .btn:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/*============= Quick Settings ===================*/
+.quick-settings {
+  padding: 2.5rem 2.5rem 1.5rem;
+}
+
+.quick-settings .setting {
+  margin-bottom: 2.5rem;
+}
+
+.quick-settings .setting:not(:first-child) {
+  margin-bottom: 5rem;
+}
+
+.quick-settings .setting .label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.sign-out-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
 }
 
 /* Mobile Responsiveness */
