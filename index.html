@@ -133,7 +133,7 @@
                       <div class="label">Language</div>
                       <div class="control">
                         <div class="toggle-switch-new">
-                          <input type="hidden" name="language">
+                          <input type="hidden" name="language" onchange="test(this)">
                           <label class="active" data-value="english">English</label>
                           <label data-value="arabic">Arabic</label>
                         </div>
@@ -143,9 +143,9 @@
                       <div class="label">Mode</div>
                       <div class="control">
                         <div class="toggle-switch-new">
-                          <input type="hidden" name="language">
-                          <label class="active" data-value="english">Dark</label>
-                          <label data-value="arabic">Light</label>
+                          <input type="hidden" onchange="test(this)" name="language">
+                          <label class="active" data-value="dark">Dark</label>
+                          <label data-value="light">Light</label>
                         </div>
                       </div>
                     </div>
@@ -204,8 +204,8 @@
   </div>
   <div class="container mt-4 main">
     <h1 class="h1">Featured Newspaper</h1>
-    <div class="flex-wrap d-flex justify-content-between">
-      <div class="box p-4 mt-4">
+    <div class="flex-wrap d-flex">
+      <div class="box p-4 mt-4 d">
         <div class="d-flex mb-4 mb-sm-5">
           <div class="news-img flex-grow-1"><img src="assets/images/news/445226889 1.png" alt=""></div>
           <div class="news-icon">
@@ -347,42 +347,6 @@
         </div>
         <div>
           <a href="" class="news-link">Xfinity</a>
-        </div>
-      </div>
-      <div class="box p-4 mt-4">
-        <div class="d-flex mb-4 mb-sm-5">
-          <div class="news-img flex-grow-1"><img src="assets/images/news/Forbes - jpeg 0.png" alt=""></div>
-          <div class="news-icon">
-            <img src="assets/images/icons/subscribe_active.svg" alt="">
-            <img src="assets/images/icons/subscribe_active_dark.svg" class="dark" alt="">
-          </div>
-        </div>
-        <div>
-          <a href="" class="news-link">Forbes</a>
-        </div>
-      </div>
-      <div class="box p-4 mt-4">
-        <div class="d-flex mb-4 mb-sm-5">
-          <div class="news-img flex-grow-1"><img src="assets/images/news/The Verge - jpeg 0.png" alt=""></div>
-          <div class="news-icon">
-            <img src="assets/images/icons/subscribe.svg" alt="">
-            <img src="assets/images/icons/subscribe_dark.svg" class="dark" alt="">
-          </div>
-        </div>
-        <div>
-          <a href="" class="news-link">Theeverge</a>
-        </div>
-      </div>
-      <div class="box p-4 mt-4">
-        <div class="d-flex mb-4 mb-sm-5">
-          <div class="news-img flex-grow-1"><img src="assets/images/news/TechCabal - png 0.png" alt=""></div>
-          <div class="news-icon">
-            <img src="assets/images/icons/subscribe_active.svg" alt="">
-            <img src="assets/images/icons/subscribe_active_dark.svg" class="dark" alt="">
-          </div>
-        </div>
-        <div>
-          <a href="" class="news-link">Techcabal</a>
         </div>
       </div>
     </div>
