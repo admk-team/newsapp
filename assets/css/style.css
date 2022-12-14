@@ -1856,10 +1856,10 @@ body.dark-mode {
 @media (min-width: 576px) {
   .article-page .content {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     color: #000000;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.5rem;
   }
 }
 
