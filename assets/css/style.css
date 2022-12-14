@@ -351,6 +351,16 @@ body.dark-mode {
   box-shadow: 0px 4.94153px 24.7076px rgba(0, 0, 0, 0.08);
   border-radius: 9.88306px;
 }
+.box:not(.box:nth-child(2n)) {
+  margin-right: 2.1rem;
+}
+
+@media (min-width: 576px) {
+  .box {
+    margin-right: 2.5rem;
+  }
+}
+
 @media (min-width: 375px) {
   .box {
     width: 161px;
